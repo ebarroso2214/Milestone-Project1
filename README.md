@@ -26,6 +26,10 @@ Describe the logic involved in player decisions.
     playerStop will stop the character from moving happen when no key is pressed.
     playerWin will display an alert when the player beats the game
     playerLoss will display an alert that the player lost and will ask the player to try again.
+    playerScore will be a function that enables the user to score
+    winnerMessage will display a message saying the user has won and prompt them to try again
+    loserMessage will display a message saying the user has lost and will prompt them to try again
+
 Describe the logic that evaluates the player's victory/loss/progress status.
 ```
 
@@ -33,27 +37,27 @@ Describe the logic that evaluates the player's victory/loss/progress status.
 ### MVP Criteria
 
 - Your game must be winnable and clearly shows there’s a winner.
+  -The winner will have a message pop up once they score the goal
 - You must provide clear, easily accessible instructions on how to play the game.
-- Another thing my game must do to meet my minimum standard.
-- One more thing.
-- Etc.
+  -Instructions provided will tell user to used WASD keys to move
+
 
 ### Post-MVP Plans
 
 - One great idea I hope to be able to add in before the project deadline.
-    A nice background 
+    A nice background
 - Another that will be a stretch.
-    Power ups
+    randomized moving NPC's
 - Something else I don't technically know how to do... _yet_. :)
     Make a cutscene
 
 ## Project Planning
 
-| Date      | Goals                                                                    |
-| --------- | ------------------------------------------------------------------------ |
-| Mon. 7/11 | Create GitHub repository. Complete README.md.                            |
-| Wed. 7/13 |                                                                          |
-| Sat. 7/16 |                                                                          |
-| Mon. 7/18 |                                                                          |
-| Wed. 7/20 |                                                                          |
-| Sat. 7/23 | Deploy to GitHub Pages. Submit completed project. Project presentations. |
+|Date| Goals|
+|----| -----|
+| Mon. 2/13 | Create GitHub repository. Complete README.md |
+| Wed. 2/15 | Making sure your deployment to GitHub Pages works. |
+| Sat. 2/18 | Have user be moving and NPC's moving while creating a collision system     |
+| Mon. 2/20 | Give the user the ability to score and win or get touched by players and lose     |
+| Wed. 2/22 | Test project and plan to test and ensure GitHub Pages deploy is up to date and working successfully ahead of your final commit.  |
+| Sat. 2/25 |  Submit completed project. Project presentations. |
