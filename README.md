@@ -17,10 +17,10 @@ This project I'm making will be a platformer type of game, inspired by my love f
 The pseudocode should describe in plain, simple language the logic of the game.
 Describe the logic involved in player decisions.
   - What are the choices available to the player?
-    moveForward, moveBackward, playerStop, playerJump
+    moveLeft, moveRight,moveUp, moveDown
   - What happens when the player makes a choice?
-    moveForward will move the user forwards towards the end of the map when W key is pressed.
-    moveBackward will move them closer to the start of the map when S key is pressed.
+    moveUp will move the user forwards towards the top of the map when W key is pressed.
+    moveDown will move them closer to the start of the map when S key is pressed.
     moveLeft will move the player to the left when the A key is pressed
     moveRight will move the player to the right when the D key is pressed
     playerStop will stop the character from moving happen when no key is pressed.
