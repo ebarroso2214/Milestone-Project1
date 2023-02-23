@@ -8,7 +8,7 @@ Complete the planning sections below and include them in the README.md of your p
 
 ## Project Description
 
-This project I'm making will be a platformer type of game, inspired by the anime/manga Blue Lock which is a series that is about creating the worlds very best Striker and ultimately win the World Cup. The premise of the game is no different than other platformers. You avoid enemies, and try to make it to the end of the map to win.
+This project I'm making will be a platformer type of game, inspired by my love for the beautiful game which we call Soccer/Footbal. Ultimately the goal of this game is for you to win the World Cup. The premise of the game is no different than other platformers. You avoid enemies, and try to make it to the end of the map to win.
 
 ## Game Logic
 
@@ -53,11 +53,13 @@ Describe the logic that evaluates the player's victory/loss/progress status.
 
 ## Project Planning
 
+
 |Date| Goals|
 |----| -----|
 | Mon. 2/13 | Create GitHub repository. Complete README.md |
 | Wed. 2/15 | Making sure your deployment to GitHub Pages works. |
-| Sat. 2/18 | Have user be moving and NPC's moving while creating a collision system     |
-| Mon. 2/20 | Give the user the ability to score and win or get touched by players and lose     |
-| Wed. 2/22 | Test project and plan to test and ensure GitHub Pages deploy is up to date and working successfully ahead of your final commit.  |
-| Sat. 2/25 |  Submit completed project. Project presentations. |
+| Sat. 2/18 | Work day in class |
+| Mon. 2/20 | No class: President’s Day |
+| Wed. 2/22 | Work day in class  |
+| Sat. 2/25 | Submit completed project. Project presentations. |
+| Mon. 2/27 | Submit your completed project. Present your project. |
