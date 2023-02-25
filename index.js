@@ -56,7 +56,7 @@ function startGame () {
         hitbox.style.left = y +'vw'
         hitbox.style.top = x +'vh'
         hitbox.className = 'hitbox'      //adjust properties of hitbox
-
+        
         let img = document.createElement('img') //inserts the image for character
         img.src = './assets/green-character/static.gif';
         document.getElementById('character').appendChild(img)
@@ -72,22 +72,24 @@ function startGame () {
 
         
         function playerMovement(){
-            document.addEventListener ('keydown', keyPressed) //event listener for keydown
+           let playerMoves = document.addEventListener ('keydown', keyPressed,false)
+             //event listener for keydown
             
 
             function keyPressed (e){
-                if(movement){ 
-                if (e.key === 'w'){ 
-                        hitbox.style.top = dx-- + x + 'vh'
-                    } else if (e.key === 's' ) {
-                        hitbox.style.top = dx++ + x + 'vh'
-                    } else if (e.key === 'a'){
-                        hitbox.style.left = dy-- + y + 'vw'
-                    } else if (e.key === 'd') {
-                        hitbox.style.left = dy++ + y + 'vw'
-                    }
-                    collisionDetect()
+                 
+                if (e.key === 'w' && movement === true){ 
+                    hitbox.style.top = dx-- + x + 'vh'
+                } else if (e.key === 's' ) {
+                    hitbox.style.top = dx++ + x + 'vh'
+                } else if (e.key === 'a'){
+                    hitbox.style.left = dy-- + y + 'vw'
+                } else if (e.key === 'd') {
+                    hitbox.style.left = dy++ + y + 'vw'
                 }
+                
+                collisionDetect()
+
             }
             
         }
@@ -132,7 +134,7 @@ function startGame () {
 
     
 
-    function collisionDetect (){
+    function collisionDetect (){ //
         let playerHitbox = document.querySelector('.hitbox')
         let style = getComputedStyle(playerHitbox)
         let x1 = parseInt(style.top)
@@ -150,8 +152,12 @@ function startGame () {
         if (x1 <= borderX ){
             console.log('collided')
             movement = false
-            
+            hitbox.style.top = 0
+            playerMoves = false
+ 
         }
+
+
     }
     // collisionDetect()
 }
