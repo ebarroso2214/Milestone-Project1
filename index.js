@@ -31,75 +31,72 @@ function loserMessage(){
 
 function removeMenu(btn, param1, id){
     
-    btn.addEventListener('click', function() {
+    btn.addEventListener('click', function() { //event listener for button being clicked
          param1 = document.getElementById(id)
-         console.log(param1)
-         console.log(param1.parentElement)
-         param1.parentElement.remove()
-         startGame()
+         param1.parentElement.remove() //deletes menu entirely
+         startGame() //invokes the super function startGame that has all the games properties held within it
          
     })
     
 
 }
 function startGame () {
-    function insertPlayer(){
-        let x = 45
-        let y = 40
-        let dx = 0
-        let dy = 0
-        
-        
-        
-        
-        let hitbox = document.createElement('div')
-        document.getElementById('character').appendChild(hitbox)
-        hitbox.style.width = '50px'
-        hitbox.style.height = '71px'
-        hitbox.style.border = '2px solid black'
+    let x = 45
+    let y = 40
+    let dx = 0
+    let dy = 0
+    let hitbox;
+    function insertPlayer(){ 
+        hitbox = document.createElement('div') // assigns variable hitbox to create a div element
+        document.getElementById('character').appendChild(hitbox) //adds hitbox to character section in document.
+        hitbox.style.width = 2.5 +'vw'
+        hitbox.style.height = 8 +'vh'
+        hitbox.style.border = '0.15vw solid black'
         hitbox.style.position = 'absolute'
         hitbox.style.left = y +'vw'
         hitbox.style.top = x +'vh'
-        hitbox.className = 'hitbox'
-            
-        // hitbox.style.backgroundColor = 'black'
-        // console.log(hitbox)
-            
-    
-        let img = document.createElement('img')
+        hitbox.className = 'hitbox'      //adjust properties of hitbox
+
+        let img = document.createElement('img') //inserts the image for character
         img.src = './assets/green-character/static.gif';
         document.getElementById('character').appendChild(img)
-        // console.log(img)
-        // console.log(img.parentElement)
         img.style.position = 'absolute'
-        // img.style.left;
-        // img.style.top;
         img.className = 'player'
         
-        hitbox.append(img)
+        hitbox.append(img) //appends img to hitbox
+        
 
+        
+
+        
+
+        
         function playerMovement(){
+            document.addEventListener ('keydown', keyPressed) //event listener for keydown
+            
 
-            
-            
-            document.addEventListener ('keydown', keyPressed)
-            
             function keyPressed (e){
-                if (e.key === 'w'){
-                    hitbox.style.top = dx-- + x + 'vh'
-                } else if (e.key === 's') {
-                    hitbox.style.top = dx++ + x + 'vh'
-                } else if (e.key === 'a'){
-                    hitbox.style.left = dy-- + y + 'vw'
-                } else if (e.key === 'd') {
-                    hitbox.style.left = dy++ + y + 'vw'
+                if(movement){ 
+                if (e.key === 'w'){ 
+                        hitbox.style.top = dx-- + x + 'vh'
+                    } else if (e.key === 's' ) {
+                        hitbox.style.top = dx++ + x + 'vh'
+                    } else if (e.key === 'a'){
+                        hitbox.style.left = dy-- + y + 'vw'
+                    } else if (e.key === 'd') {
+                        hitbox.style.left = dy++ + y + 'vw'
+                    }
+                    collisionDetect()
                 }
             }
+            
         }
         playerMovement()
+
+        // return hitbox
     }
 
-
+    let movement = true
 
 
 
@@ -116,19 +113,47 @@ function startGame () {
 
         let npcHitbox = document.createElement('div')
         document.getElementById('character').appendChild(npcHitbox)
-        npcHitbox.style.width = '50px'
-        npcHitbox.style.height = '71px'
-        npcHitbox.style.border = '2px solid black'
+        npcHitbox.style.width = 2.5 +'vw'
+        npcHitbox.style.height = 7 +'vh'
+        npcHitbox.style.border = '0.15vw solid black'
         npcHitbox.style.position = 'absolute'
-        npcHitbox.style.left = '60vw'
-        npcHitbox.style.top = '45vh'
-        npcHitbox.className = 'hitbox'
-
+        npcHitbox.style.left = 60+'vw'
+        npcHitbox.style.top = 45+'vh'
+        npcHitbox.className = 'npcHitbox'
+        
 
         
     }
     insertPlayer()
     insertNPC1()
+
+
+   
+
+    
+
+    function collisionDetect (){
+        let playerHitbox = document.querySelector('.hitbox')
+        let style = getComputedStyle(playerHitbox)
+        let x1 = parseInt(style.top)
+        let y1 = parseInt(style.left)
+        let width = parseInt(style.width)
+        let height = parseInt(style.height)
+        console.log(x1, y1,width,height)
+
+        let collisionBorder = document.querySelector('#collision')
+        // console.log(collisionBorder)
+        let borderStyle1 = getComputedStyle(collisionBorder)
+        let borderX = parseInt(borderStyle1.top)
+        console.log(borderX)
+
+        if (x1 <= borderX ){
+            console.log('collided')
+            movement = false
+            
+        }
+    }
+    // collisionDetect()
 }
-// insertPlayer()
+
 
