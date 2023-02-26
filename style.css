@@ -62,7 +62,7 @@ body {
 #collision {
     position: absolute;
     top: 1.2vh;
-    background-color: black;
+    /* background-color: black; */
     width: 100vw;
     height:3vh;
     
@@ -70,7 +70,7 @@ body {
 
 #collision2 {
     position: absolute;
-    background-color: black;
+    /* background-color: black; */
     width: 100vw;
     height:3vh;
     top: 93.5vh;
@@ -78,7 +78,7 @@ body {
 
 #collision3 {
     position: absolute;
-    background-color: black;
+    /* background-color: black; */
     height: 100vh;
     width: 2vw;
     left: 2.8vw;
@@ -86,7 +86,7 @@ body {
 
 #collision4 {
     position: absolute;
-    background-color: black;
+    /* background-color: black; */
     height: 100vh;
     width: 2vw;
     left:95vw;
@@ -94,9 +94,11 @@ body {
 
 #goal{
     position: absolute;
-    border: 0.15vw solid red;
+    /* border: 0.15vw solid red;  used this as a means to set up the the boundary around for testing purposes  */
     width: 6vw;
     height: 28.2vh;
     left:89vw;
     top: 34.55vh;
 }
+
+
