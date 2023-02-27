@@ -23,10 +23,11 @@ Describe the logic involved in player decisions.
     moveDown will move them closer to the start of the map when S key is pressed.
     moveLeft will move the player to the left when the A key is pressed
     moveRight will move the player to the right when the D key is pressed
+    playerCollison will be collision properties for the boundary, the NPC's, and the goal
     playerStop will stop the character from moving happen when no key is pressed.
-    playerWin will display an alert when the player beats the game
-    playerLoss will display an alert that the player lost and will ask the player to try again.
-    playerScore will be a function that enables the user to score
+    playerWin will display an alert when the player beats the game by hitting the goal zone
+    playerLoss will display an alert that the player lost when the player either hits the NPC's or the boundaries around the field and will ask the player to try again.
+    playerScore is whenever the user scores the goal by hitting the goal zone
     winnerMessage will display a message saying the user has won and prompt them to try again
     loserMessage will display a message saying the user has lost and will prompt them to try again
 
