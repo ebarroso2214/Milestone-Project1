@@ -64,3 +64,7 @@ Describe the logic that evaluates the player's victory/loss/progress status.
 | Wed. 2/22 | Work day in class  |
 | Sat. 2/25 | Submit completed project. Project presentations. |
 | Mon. 2/27 | Submit your completed project. Present your project. |
+
+
+## Deployment 
+https://ebarroso2214.github.io/Milestone-Project1/
