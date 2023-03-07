@@ -1,10 +1,3 @@
-# NYU-SD-01 Milestone Project: Planning
-
-_Before you start programming your project_... plan it!
-
-Complete the planning sections below and include them in the README.md of your project repository. Once you're done, reach out to your instructional staff -- they'll examine your plan, help you scope it appropriately for the tools available to you and think ahead toward technical solutions, and point out any areas that could use any more thought. _Use the template below!_
-
----
 
 ## Project Description
 
@@ -14,8 +7,7 @@ This project I'm making will be a platformer type of game, inspired by my love f
 
 ```
 
-The pseudocode should describe in plain, simple language the logic of the game.
-Describe the logic involved in player decisions.
+
   - What are the choices available to the player?
     moveLeft, moveRight,moveUp, moveDown
   - What happens when the player makes a choice?
@@ -31,16 +23,8 @@ Describe the logic involved in player decisions.
     winnerMessage will display a message saying the user has won and prompt them to try again
     loserMessage will display a message saying the user has lost and will prompt them to try again
 
-Describe the logic that evaluates the player's victory/loss/progress status.
+
 ```
-
-
-### MVP Criteria
-
-- Your game must be winnable and clearly shows there’s a winner.
-  -The winner will have a message pop up once they score the goal
-- You must provide clear, easily accessible instructions on how to play the game.
-  -Instructions provided will tell user to used WASD keys to move
 
 
 ### Post-MVP Plans
