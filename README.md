@@ -51,4 +51,4 @@ This project I'm making will be a platformer type of game, inspired by my love f
 
 
 ## Deployment 
-https://ebarroso2214.github.io/Milestone-Project1/
+https://ebarroso2214.github.io/The-Last-Minute-Winner/
