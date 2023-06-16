@@ -9,7 +9,9 @@ This project I'm making will be a platformer type of game, inspired by my love f
 
 
   - What are the choices available to the player?
+  
     moveLeft, moveRight,moveUp, moveDown
+    
   - What happens when the player makes a choice?
   
     moveUp will move the user forwards towards the top of the map when W key is pressed.
