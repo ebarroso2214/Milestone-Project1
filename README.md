@@ -1,7 +1,7 @@
 
 ## Project Description
 
-This project I'm making will be a platformer type of game, inspired by my love for the beautiful game which we call Soccer/Football. Ultimately the goal of this game is for you to win the World Cup. The premise of the game is no different than other platformers. You avoid enemies, and try to make it to the end of the map to win.
+This project I'm making will be an obstacle type of game, inspired by my love for the beautiful game which we call Soccer/Football. Ultimately the goal of this game is for you to win the World Cup. The premise of the game is no different than other platformers. You avoid enemies, and try to make it to the end of the map to win.
 
 ## Game Logic
 
